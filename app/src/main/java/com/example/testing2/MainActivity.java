@@ -4,12 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        card1 = (CardView) findViewById(R.id.redfort);
-        card2 = (CardView) findViewById(R.id.bluephone);
+        card1 = (CardView) findViewById(R.id.water);
+        card2 = (CardView) findViewById(R.id.food);
         card3 = (CardView) findViewById(R.id.settingicon);
         card4 = (CardView) findViewById(R.id.smile);
 
@@ -33,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(MainActivity.this, RedfortActivity.class));
+                startActivity(new Intent(MainActivity.this, WaterActivity.class));
 
             }
         });
@@ -41,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(MainActivity.this, BluephoneActivity.class));
+                startActivity(new Intent(MainActivity.this, FoodActivity.class));
 
             }
         });

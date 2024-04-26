@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RedfortActivity">
+    tools:context=".WaterActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -33,8 +33,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.797"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/red_fort"
-        tools:layout_editor_absoluteY="98dp" />
+        app:srcCompat="@drawable/water_icon"
+        tools:layout_editor_absoluteY="98dp"
+        tools:ignore="MissingConstraints" />
 
     <View
         android:id="@+id/divider"
