@@ -13,10 +13,10 @@
         android:theme="@style/Theme.Testing2"
         tools:targetApi="31">
         <activity
-            android:name=".smile_activity"
+            android:name=".StudyActivity"
             android:exported="false" />
         <activity
-            android:name=".seticon_activity"
+            android:name=".ExerciseActivity"
             android:exported="false" />
         <activity
             android:name=".FoodActivity"

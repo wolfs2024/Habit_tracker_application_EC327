@@ -73,7 +73,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/settingicon"
+            android:id="@+id/exercise"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
@@ -90,12 +90,12 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_centerInParent="true"
-                    android:src="@drawable/setting_icon" />
+                    android:src="@drawable/run_icon" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/smile"
+            android:id="@+id/study"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
@@ -112,7 +112,7 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_centerInParent="true"
-                    android:src="@drawable/test_smile" />
+                    android:src="@drawable/study_icon" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
