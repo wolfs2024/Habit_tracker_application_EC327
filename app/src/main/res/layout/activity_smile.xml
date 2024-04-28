@@ -5,24 +5,26 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ExerciseActivity">
+    tools:context=".smile_activity">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="216dp"
-        android:layout_height="324dp"
-        android:text="This is the setting icon!"
+        android:layout_width="220dp"
+        android:layout_height="193dp"
+        android:text="This is the smile card!"
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="165dp"
         android:layout_height="132dp"
-        app:srcCompat="@drawable/run_icon"
-        tools:layout_editor_absoluteX="92dp"
-        tools:layout_editor_absoluteY="72dp" />
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/test_smile" />
 </androidx.constraintlayout.widget.ConstraintLayout>

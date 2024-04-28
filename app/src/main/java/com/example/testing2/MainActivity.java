@@ -1,6 +1,5 @@
 package com.example.testing2;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -16,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
 
     // testing testing
 
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
         card1 = (CardView) findViewById(R.id.water);
         card2 = (CardView) findViewById(R.id.food);
-        card3 = (CardView) findViewById(R.id.exercise);
-        card4 = (CardView) findViewById(R.id.study);
+        card3 = (CardView) findViewById(R.id.settingicon);
+        card4 = (CardView) findViewById(R.id.smile);
 
         card1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(MainActivity.this, ExerciseActivity.class));
+                startActivity(new Intent(MainActivity.this, seticon_activity.class));
 
             }
         });
@@ -57,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(MainActivity.this, StudyActivity.class));
+                startActivity(new Intent(MainActivity.this, smile_activity.class));
 
             }
         });
