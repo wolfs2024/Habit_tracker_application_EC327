@@ -16,6 +16,7 @@
         tools:ignore="MissingConstraints" />
 
     <GridLayout
+        android:id="@+id/gridLayout"
         android:layout_width="250dp"
         android:layout_height="200dp"
         android:layout_margin="10dp"
@@ -119,7 +120,7 @@
     </GridLayout>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Habit Tracker"
@@ -132,5 +133,17 @@
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toTopOf="@+id/view"
         app:layout_constraintVertical_bias="0.511" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="324dp"
+        android:layout_height="227dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        app:srcCompat="@drawable/normal" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
