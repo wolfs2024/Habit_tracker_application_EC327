@@ -60,4 +60,35 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+     String name;
+    EditText nameIput;
+    Button submitButton;
+    TextView displayName;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        nameIput = (EditText) findViewById(R.id.name_Input);
+        submitButton = (Button) findViewById(R.id.submit_Button);
+        displayName = findViewById(R.id.display_name);
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String name = nameInput.getText().toString();
+                if (!name.isEmpty()) {
+                    displayName.setText(name);
+                    nameInput.getText().clear();
+                } else {
+                    displayName.setText("Please enter your name.");
+                }
+                //displayName.setText(name);
+        });
+
+    }
+
+}
+}
+
 }
