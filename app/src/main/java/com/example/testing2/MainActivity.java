@@ -14,7 +14,7 @@ import androidx.cardview.widget.CardView;
 
 public class MainActivity extends AppCompatActivity {
 
-    // Create the classes for each card
+   //Doing this to push commit
     public CardView card1, card2, card3, card4;
     private int value = 0;
     private int savedProgress = 0;
