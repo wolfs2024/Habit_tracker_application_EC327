@@ -52,4 +52,16 @@
         app:layout_constraintTop_toBottomOf="@+id/study_description"
         app:srcCompat="@drawable/study"
         tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Go back!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

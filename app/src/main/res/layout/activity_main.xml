@@ -123,10 +123,10 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Habit Tracker"
+        android:text="Traction"
         android:textAlignment="center"
         android:textColor="#DD1515"
-        android:textSize="48sp"
+        android:textSize="60sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="@+id/view"
@@ -145,5 +145,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gridLayout"
         app:srcCompat="@drawable/normal" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="435dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="16dp"
+        android:indeterminateOnly="false"
+        android:progressTint="#FB3434"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="2dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
