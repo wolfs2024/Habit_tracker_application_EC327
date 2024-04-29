@@ -23,7 +23,7 @@ public class StudyActivity extends AppCompatActivity {
     }
 
     private void setupEndActivityButton() {
-        Button back_button = (Button) findViewById(R.id.back_button);
+        Button back_button = (Button) findViewById(R.id.back_button1);
         back_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
