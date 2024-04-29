@@ -147,7 +147,7 @@
         app:srcCompat="@drawable/normal" />
     <ProgressBar
 
-        android:id="@+id/progressBar"
+        android:id="@+id/progressBar2"
 
         style="?android:attr/progressBarStyleHorizontal"
 
