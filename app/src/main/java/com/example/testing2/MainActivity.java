@@ -1,10 +1,8 @@
 package com.example.testing2;
-//This is to force a push
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.Date;
@@ -73,6 +71,11 @@ public class MainActivity extends AppCompatActivity {
         timer.schedule(new UpdateProgressBar(), 0, 1000); // Update progress bar every second
     }
 
+    public void updateProgressBarValue(int value) {
+        ProgressBar progressBar = findViewById(R.id.progressBar); // Get reference to the progress bar
+        progressBar.setProgress(value);
+    }
+
     class UpdateProgressBar extends TimerTask {
 
         long startTime = new Date().getTime();
@@ -102,12 +105,6 @@ public class MainActivity extends AppCompatActivity {
             // Call method to update progress bar value
             updateProgressBarValue(value);
             additionalProgress = 0;
-        }
-
-        // Method to update the progress bar value
-        private void updateProgressBarValue(int value) {
-            ProgressBar progressBar = findViewById(R.id.progressBar); // Get reference to the progress bar
-            progressBar.setProgress(value);
         }
     }
 
