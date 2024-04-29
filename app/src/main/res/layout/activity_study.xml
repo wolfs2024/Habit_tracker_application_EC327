@@ -54,11 +54,14 @@
         tools:ignore="ContentDescription" />
 
     <Button
-        android:id="@+id/back_button"
+        android:id="@+id/back_button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:text="Go back!"
+        android:textStyle="bold"
+        android:textColor = "@color/white"
+        android:background="#88517F"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

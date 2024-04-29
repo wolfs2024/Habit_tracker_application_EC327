@@ -52,4 +52,18 @@
         app:layout_constraintTop_toBottomOf="@+id/eating_description"
         app:srcCompat="@drawable/eating"
         tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/back_button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Go back!"
+        android:textStyle="bold"
+        android:textColor = "@color/white"
+        android:background="#671C1C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
